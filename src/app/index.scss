@@ -1,0 +1,250 @@
+$darkblue: #003481;
+$red: #E60000;
+$grey: #ADADAD;
+@import '../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap';
+/*HEADER STYLES*/
+header {
+  font-family: 'Droid Serif';
+  h1 {
+    color: $darkblue;
+    font-family: Tahoma;
+    padding-bottom: 0;
+  }
+  h3{
+    color: $red;
+    margin: 0;
+  }
+  address{
+    font-size: 120%;
+    color: $red;
+    margin-bottom: 0;
+  }
+}
+.statement {
+  font-family: "Fjalla One";
+  text-align: center;
+  background-image: url('http://upload.wikimedia.org/wikipedia/commons/6/6e/Lillaf%C3%BCred_banner_Palace_Hotel.jpg');
+  padding: 5% 0 5% 0;
+  border-radius: 2em;
+  span{
+    background-color:black;
+    color:white;
+    font-size: 140%;
+  }
+
+}
+.banner{
+  padding: 0;
+}
+.contact{
+  list-style: none;
+  padding: 0 2% 0 0;
+  text-align:right;
+  li{
+    color: $darkblue;
+    font-size: 90%;
+    &:nth-child(1){
+      color: $grey;
+      text-decoration: underline;
+    }
+    a{
+      text-decoration: none;
+      color: $darkblue;
+      &:hover{
+      color: $grey;
+      }
+    }
+  }
+}
+/*END HEADER*/
+/*NAVBAR STYLES*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+#cssmenu {
+  background: $grey;
+  width: auto;
+}
+#cssmenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  display: block;
+  zoom: 1;
+}
+#cssmenu ul:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#cssmenu ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+#cssmenu.align-right ul li {
+  float: right;
+}
+#cssmenu.align-center ul {
+  text-align: center;
+}
+#cssmenu ul li a {
+  color: $darkblue;
+  text-decoration: none;
+  display: block;
+  padding: 15px 25px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+#cssmenu ul li a:hover {
+  color: white;
+}
+#cssmenu ul li a:hover:before {
+  width: 100%;
+}
+#cssmenu ul li a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -3px;
+  top: 19px;
+  height: 6px;
+  width: 6px;
+  background: #ffffff;
+  opacity: .5;
+}
+#cssmenu ul li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #333333;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+#cssmenu ul li.last > a:after,
+#cssmenu ul li:last-child > a:after {
+  display: none;
+}
+#cssmenu ul li.active a {
+  color: #333333;
+}
+#cssmenu ul li.active a:before {
+  width: 100%;
+}
+#cssmenu.align-right li.last > a:after,
+#cssmenu.align-right li:last-child > a:after {
+  display: block;
+}
+#cssmenu.align-right li:first-child a:after {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #cssmenu ul li {
+    float: none;
+    display: block;
+  }
+  #cssmenu ul li a {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #fb998c;
+  }
+  #cssmenu ul li.last > a,
+  #cssmenu ul li:last-child > a {
+    border: 0;
+  }
+  #cssmenu ul li a:after {
+    display: none;
+  }
+  #cssmenu ul li a:before {
+    display: none;
+  }
+}
+/*END NAVBAR*/
+
+/*HOME-PAGE*/
+.home-page{
+  text-align: center;
+  h2{
+    text-align: center;
+    font-family: 'Fjalla One';
+    color: $darkblue;
+    font-size: 340%;
+  }
+  p{
+    font-family: 'Droid Serif';
+    font-size: 120%;
+    strong{
+      font-size: 1.2em;
+    }
+    a{
+      color: white;
+      font-size: 1.2em;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    &:first-of-type{
+      background-color:$darkblue;
+      border-radius: 2em;
+      padding: 5%;
+      color: white;
+      i{
+        font-size: 800%;
+        float: left;
+      }
+    }
+    &:nth-of-type(2){
+      background-color:$darkblue;
+      border-radius: 2em;
+      padding: 5%;
+      color: white;
+      i{
+        font-size: 800%;
+        float: right;
+      }
+    }
+    &:last-of-type{
+      background-color: $darkblue;
+      color: white;
+      border-radius: 2em;
+      padding: 5%;
+      i{
+        font-size: 800%;
+        float: left;
+      }
+    }
+    &:hover{
+      font-size: 121%;
+    }
+  }
+}
+/*END HOME-PAGE*/
+
+/*CONTACT PAGE*/
+.contact{
+  h2{
+    text-align: center;
+    color: $darkblue;
+  }
+}
+/*END CONTACT*/
+// injector
+// endinjector
